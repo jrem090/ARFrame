@@ -20,9 +20,3 @@ function myFunction(arr) {
     }
     document.getElementById("demo").innerHTML = out;
 }
-
-function run()
-{
-    xmlhttp.open("GET", url, true);
-xmlhttp.send(); 
-}
