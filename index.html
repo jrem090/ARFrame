@@ -9,12 +9,12 @@ Access-Control-Allow-Origin: *
     <!-- create your content here. just a box for now -->
     <!--<a-box position='0 0.5 0' material='opacity: 0.5;'></a-box>-->
     <!-- define a camera which will move according to the marker position -->
-    <!--<a-assets>
-      <a-asset-item id="dog" src="https://github.com/jrem090/ARFrame/blob/master/husky.gltf"></a-asset-item>
-    </a-assets>-->
+    <a-assets>
+      <a-asset-item id="dog" src="https://raw.githubusercontent.com/jrem090/ARFrame/master/husky_glb.glb" crossorigin=anonymous></a-asset-item>
+    </a-assets>
     <!-- use your gltf model -->
-    <!--<a-entity gltf-model="#dog"></a-entity>-->
-    <a-entity gltf-model="url(https://raw.githubusercontent.com/jrem090/ARFrame/master/husky_glb.glb)" crossorigin=anonymous position='0 0.5 0' ></a-entity>
+    <a-entity gltf-model="#dog"></a-entity>
+    <!--<a-entity gltf-model="url(https://raw.githubusercontent.com/jrem090/ARFrame/master/husky_glb.glb)" crossorigin=anonymous position='0 0.5 0' ></a-entity>-->
     <a-marker-camera preset='hiro'></a-marker-camera>
   </a-scene>
 </body>
