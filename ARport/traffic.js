@@ -1,5 +1,4 @@
 
-
 function myFunction(arr) {
     var out = "";
     var i;
