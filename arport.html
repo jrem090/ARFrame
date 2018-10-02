@@ -1,5 +1,5 @@
 Access-Control-Allow-Origin: *
-<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+
 
 
 <!-- include A-Frame obviously -->
@@ -9,6 +9,7 @@ Access-Control-Allow-Origin: *
 <!--<script src="https://raw.githubusercontent.com/jrem090/ARFrame/master/ARport/traffic.js"></script>-->
 <script src="https://rawgit.com/jrem090/ARFrame/master/ARport/traffic.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
+        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
     <a-scene embedded arjs>
         <script>
             setInterval(requestTraffic, 1000);    
