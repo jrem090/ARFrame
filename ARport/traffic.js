@@ -23,5 +23,6 @@ function requestTraffic()
         }
     };
     xmlhttp.open("GET", url, true);
+    xmlhttp.setRequestHeader("api-auth", "test");
     xmlhttp.send();
 }
