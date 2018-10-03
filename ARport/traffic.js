@@ -24,5 +24,6 @@ function requestTraffic()
     };
     xmlhttp.open("GET", url, true);
     xmlhttp.setRequestHeader("api-auth", "test");
+    xmlhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xmlhttp.send();
 }
