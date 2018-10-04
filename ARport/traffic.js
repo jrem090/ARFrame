@@ -12,9 +12,13 @@ function myFunction(arr) {
 
 function requestTraffic()
 {
-        var xmlhttp = new XMLHttpRequest();
-        xmlhttp.setRequestHeader('api-auth', 'test')
+    var xmlhttp = new XMLHttpRequest();
     var url = "https://adsbexchange.com/api/aircraft/json/lat/33.433638/lon/-112.008113/dist/10/"
+
+
+    xmlhttp.open("GET", url, true);
+    xmlhttp.setRequestHeader('api-auth', 'test')
+    xmlhttp.send();
 
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -22,6 +26,4 @@ function requestTraffic()
             myFunction(myArr);
         }
     };
-    xmlhttp.open("GET", url, true);
-    xmlhttp.send();
 }
