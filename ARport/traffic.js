@@ -13,8 +13,8 @@ function myFunction(arr) {
 function requestTraffic()
 {
         var xmlhttp = new XMLHttpRequest();
-    //var url = "https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json?lat=33.433638&lng=-112.008113&fDstL=0&fDstU=100"
-    var url = "https://adsbexchange.com/api/aircraft/json/lat/33.433638/lon/-112.008113/dist/10/";
+        xmlhttp.setRequestHeader('api-auth', 'test')
+    var url = "https://public-api.adsbexchange.com/VirtualRadar/AircraftList.json?lat=33.433638&lng=-112.008113&fDstL=0&fDstU=100"
 
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
@@ -23,7 +23,5 @@ function requestTraffic()
         }
     };
     xmlhttp.open("GET", url, true);
-    xmlhttp.setRequestHeader("api-auth", "test");
-    xmlhttp.setRequestHeader("Access-Control-Allow-Origin", "*");
     xmlhttp.send();
 }
