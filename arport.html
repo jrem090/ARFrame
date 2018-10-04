@@ -1,29 +1,11 @@
-Access-Control-Allow-Origin: *
-        Content-Security-Policy: upgrade-insecure-requests;
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-        additional_head_content: <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<head>
-        Access-Control-Allow-Origin: *
-        Content-Security-Policy: upgrade-insecure-requests;
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-        additional_head_content: <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-</head>
-Access-Control-Allow-Origin: *
-        Content-Security-Policy: upgrade-insecure-requests;
-        <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
-        additional_head_content: <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-<!-- include A-Frame obviously -->
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
-<!-- include ar.js for A-Frame -->
 <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
-<!--<script src="https://raw.githubusercontent.com/jrem090/ARFrame/master/ARport/traffic.js"></script>-->
-<script src="https://rawgit.com/jrem090/ARFrame/master/ARport/traffic.js"></script>
 <body style='margin : 0px; overflow: hidden;'>
-        
     <a-scene embedded arjs>
-        <script>
-            setInterval(requestTraffic, 1000);    
-        </script>
+      <a-assets>
+        <a-asset-item id="airport" src="https://raw.githubusercontent.com/jrem090/ARFrame/demo/AIRSPACE_NY3.glb"></a-asset-item>
+      </a-assets>
+            <a-entity gltf-model="#airport"></a-entity>
         <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
   </body>
