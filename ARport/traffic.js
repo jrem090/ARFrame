@@ -5,7 +5,7 @@ function myFunction(arr) {
     for(i = 0; i < arr.length; i++) {
         //out += '<a href="' + arr[i].url + '">' + 
         //arr[i].display + '</a><br>';
-        out += 'arr[i].Call'
+        out += 'arr[i].icao'
     }
     document.getElementById("demo").innerHTML = out;
 }
