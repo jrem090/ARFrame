@@ -1,3 +1,5 @@
+var lat = 33.433638;
+var lon = -112.008113;
 
 function myFunction(arr) {
     var out = "";
@@ -7,7 +9,8 @@ function myFunction(arr) {
         //arr[i].display + '</a><br>';
         out += arr.ac[i].icao + "  ";
         //document.getElementById("parent").setAttribute(arr.ac[i].icao, {primitive: 'box', height: .1, width: .1});
-        document.getElementById("parent").setAttribute(arr.ac[i].icao, {primitive: 'box', height: .1, width: .1, position: 1 2 arr.ac[i].alt/5000});
+        document.getElementById("parent").setAttribute(arr.ac[i].icao, {primitive: 'box', height: .1, width: .1, position: 0 0 0});
+        // arr.ac[i].alt/5000
     }
     document.getElementById("demo").innerHTML = out;
     
