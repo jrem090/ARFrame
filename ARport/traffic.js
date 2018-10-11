@@ -35,11 +35,11 @@ function myFunction(arr) {
             var londiff = (R * c)/10; 
             if((lat1-lat) > 0.0)
             {
-                dlat = -dlat;   
+                latdif = -latdif;
             }
              if((lon1-lon) > 0.0)
             {
-                dlon = -dlon;   
+                londiff = -londiff;   
             } 
             els[i].object3D.visible = true;
             els[i].object3D.ID = arr.ac[i].icao;
