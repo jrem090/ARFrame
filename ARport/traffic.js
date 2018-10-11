@@ -1,7 +1,7 @@
 var lat  = 33.433638;
 var lon  = -112.008113;
 var dist = 10.0;
-var R    = 6,371; // in KM
+var R    = 6371; // in KM
 function myFunction(arr) {
     var out = "";
     var i;
