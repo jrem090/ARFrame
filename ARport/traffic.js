@@ -33,8 +33,18 @@ function myFunction(arr) {
             a = (Math.sin(dlat/2)*Math.sin(dlat/2)) + Math.cos(lat1) * Math.cos(lat) * (Math.sin(dlon/2)*Math.sin(dlon/2)) ;
             c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a) ) ;
             var londiff = (R * c)/10; 
+            if(lat1-lat > 0)
+            {
+                dlat = -dlat;   
+            }
+             if(lon1-lon > 0)
+            {
+                dlon = -dlon;   
+            } 
+              if
             els[i].object3D.visible = true;
-            els[i].object3D.position.set(latdif/10, alt, londiff/10);
+            els[i].object3D.ID = arr.ac[i].icao
+            els[i].object3D.position.set(latdif/100, alt/10, londiff/100);
               out += arr.ac[i].icao + "  ";
           }
           else
