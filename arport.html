@@ -26,15 +26,15 @@
     Lon: <input type="text" name="lon"><br>
     <input type="submit" value="Submit">
     </div>
-  </head>
+</head>
 <body style='margin : 0px; overflow: hidden;'>
-    <style>
+  <style>
   #demo {
     width:100%;
     height:200px;
   }
-</style>
-  <div id="demo"></div>
+  </style>
+  <div id="demo">
     <a-scene adsb embedded="">
         <script>
             setInterval(requestTraffic, 1000);    
@@ -42,8 +42,8 @@
       <a-assets>
         <!--<a-asset-item id="airport" src="https://raw.githubusercontent.com/jrem090/ARFrame/master/AIRSPACE.glb"></a-asset-item>-->
       </a-assets>
-      <div id="parent"></div>
-            <a-entity scale="0.15 0.15 0.15" gltf-model="#airport"></a-entity>
-        <a-marker-camera preset='hiro'></a-marker-camera>
+      <a-entity scale="0.15 0.15 0.15" gltf-model="#airport"></a-entity>
+      <a-marker-camera preset='hiro'></a-marker-camera>
     </a-scene>
-  </body>
+  </div>
+</body>
