@@ -5,6 +5,10 @@ var R    = 6371; // in KM
 function myFunction(arr) {
     var out = "";
     var i;
+    var lat  = 33.433638;
+    var lon  = -112.008113;
+    var dist = 10.0;
+    var R    = 6371; // in KM
     
     //for(i = 0; i < arr.ac.length; i++) {
         //out += '<a href="' + arr[i].url + '">' + 
