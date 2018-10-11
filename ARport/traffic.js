@@ -21,19 +21,20 @@ function myFunction(arr) {
           {
             var lon1 = arr.ac[i].lon;
             var lat1 = arr.ac[i].lat;
+            var alt = arr.ac[i].alt /10000.0;
             console.log(els[i]);    
             var dlon = 0;
-            var dlat = Math.abs(lat - lat1);
+            var dlat = lat - lat1;
             var a = (Math.sin(dlat/2)*Math.sin(dlat/2)) + Math.cos(lat1) * Math.cos(lat) * (Math.sin(dlon/2)*Math.sin(dlon/2)) ;
             var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a) ) ;
             var latdif = (R * c)/10; 
-            dlon = Math.abs(lon - lon1);
+            dlon = lon - lon1;
             dlat = 0.0;
             a = (Math.sin(dlat/2)*Math.sin(dlat/2)) + Math.cos(lat1) * Math.cos(lat) * (Math.sin(dlon/2)*Math.sin(dlon/2)) ;
             c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a) ) ;
             var londiff = (R * c)/10; 
             els[i].object3D.visible = true;
-            els[i].object3D.position.set(latdif, londiff, 0.5);
+            els[i].object3D.position.set(latdif, alt, londiff);
               out += arr.ac[i].icao + "  ";
           }
           else
