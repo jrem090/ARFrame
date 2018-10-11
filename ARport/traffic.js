@@ -17,7 +17,7 @@ function myFunction(arr) {
           {
             var lon1 = arr.ac[i].lon;
             var lat1 = arr.ac[i].lat;
-            //console.log(els[i]);    
+            console.log(els[i]);    
             var dlon = 0;
             var dlat = Math.abs(lat - lat1);
             var a = (Math.sin(dlat/2)*Math.sin(dlat/2)) + Math.cos(lat1) * Math.cos(lat2) * (Math.sin(dlon/2)*Math.sin(dlon/2)) ;
@@ -30,6 +30,7 @@ function myFunction(arr) {
             var londiff = (R * c)/10; 
             els[i].object3D.visible = true;
             els[i].object3D.position.set(latdif, londiff, 0.5);
+              out += arr.ac[i].icao + "  ";
           }
           else
           {
@@ -37,7 +38,7 @@ function myFunction(arr) {
           }
         }
     
-        out += arr.ac[i].icao + "  ";
+        
         //document.getElementById("parent").setAttribute(arr.ac[i].icao, {primitive: 'box', height: .1, width: .1});
         document.getElementById("parent").setAttribute(arr.ac[i].icao, {primitive: 'box', height: 1, width: 1, position: "0 0 0"});
         // arr.ac[i].alt/5000
