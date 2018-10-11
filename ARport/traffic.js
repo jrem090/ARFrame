@@ -10,7 +10,7 @@ function myFunction(arr) {
         //out += '<a href="' + arr[i].url + '">' + 
         //arr[i].display + '</a><br>';
     var sceneEl = document.querySelector('a-scene');
-    var els = sceneEl.querySelectorAll('*');
+    var els = sceneEl.querySelectorAll('a-sphere');
     for (var i = 0; i < els.length; i++) 
       {
           if(i <= arr.ac.length)
