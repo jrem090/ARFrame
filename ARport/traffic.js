@@ -34,7 +34,7 @@ function myFunction(arr) {
             c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a) ) ;
             var londiff = (R * c)/10; 
             els[i].object3D.visible = true;
-            els[i].object3D.position.set(latdif, alt, londiff);
+            els[i].object3D.position.set(latdif/10, alt, londiff/10);
               out += arr.ac[i].icao + "  ";
           }
           else
