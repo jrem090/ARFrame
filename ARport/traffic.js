@@ -43,7 +43,7 @@ function myFunction(arr) {
             } 
               if
             els[i].object3D.visible = true;
-            els[i].object3D.ID = arr.ac[i].icao
+            els[i].object3D.ID = arr.ac[i].icao;
             els[i].object3D.position.set(latdif/100, alt/10, londiff/100);
               out += arr.ac[i].icao + "  ";
           }
