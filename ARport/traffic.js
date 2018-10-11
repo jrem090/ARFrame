@@ -33,11 +33,11 @@ function myFunction(arr) {
             a = (Math.sin(dlat/2)*Math.sin(dlat/2)) + Math.cos(lat1) * Math.cos(lat) * (Math.sin(dlon/2)*Math.sin(dlon/2)) ;
             c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a) ) ;
             var londiff = (R * c)/10; 
-            if(lat1-lat > 0)
+            if((lat1-lat) > 0.0)
             {
                 dlat = -dlat;   
             }
-             if(lon1-lon > 0)
+             if((lon1-lon) > 0.0)
             {
                 dlon = -dlon;   
             } 
