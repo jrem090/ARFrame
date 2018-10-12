@@ -1,6 +1,6 @@
 var lat  = 33.433638;
 var lon  = -112.008113;
-var dist = 10.0;
+var dist = 20.0;
 var R    = 6371; // in KM
 function myFunction(arr) {
     var out = "";
@@ -43,7 +43,7 @@ function myFunction(arr) {
             } 
             els[i].object3D.visible = true;
             els[i].object3D.ID = arr.ac[i].icao;
-            els[i].object3D.position.set(latdif/100, alt/10, londiff/100);
+            els[i].object3D.position.set(latdif/75, alt/10, londiff/75);
               out += arr.ac[i].icao + "  ";
           }
           else
@@ -64,7 +64,7 @@ function myFunction(arr) {
 function requestTraffic()
 {
     var xmlhttp = new XMLHttpRequest();
-    var url = "https://adsbexchange.com/api/aircraft/json/lat/33.433638/lon/-112.008113/dist/10/"
+    var url = "https://adsbexchange.com/api/aircraft/json/lat/33.433638/lon/-112.008113/dist/20/"
 
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
