@@ -21,7 +21,7 @@ function myFunction(arr) {
           {
             var lon1 = arr.ac[i].lon;
             var lat1 = arr.ac[i].lat;
-            var alt = arr.ac[i].alt /10000.0;
+            var alt = arr.ac[i].alt /2500.0;
             console.log(els[i]);    
             var dlon = 0;
             var dlat = lat - lat1;
