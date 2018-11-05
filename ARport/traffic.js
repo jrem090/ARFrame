@@ -1,8 +1,4 @@
-var lat  = 33.433638;
-var lon  = -112.008113;
-var dist = 20.0;
-var R    = 6371; // in KM
-function myFunction(arr) {
+function myFunction(arr, lat, lon) {
     var out = "";
     var i;
     var lat  = 33.433638;
@@ -61,10 +57,10 @@ function myFunction(arr) {
     
 }
 
-function requestTraffic()
+function requestTraffic(lat, lon)
 {
     var xmlhttp = new XMLHttpRequest();
-    var url = "https://adsbexchange.com/api/aircraft/json/lat/33.433638/lon/-112.008113/dist/20/"
+    var url = "https://adsbexchange.com/api/aircraft/json/lat/" + lat "/lon/" + lon"/dist/20/"
 
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
