@@ -76,7 +76,7 @@ function requestTraffic(lat, lon)
 
     console.log(url);
     
-    xmlhttp.onreadystatechange = function() {
+    /*xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var myArr = JSON.parse(this.responseText);
             myFunction(myArr);
@@ -85,5 +85,5 @@ function requestTraffic(lat, lon)
 
     xmlhttp.open("GET", url, true);
     xmlhttp.setRequestHeader('api-auth', 'test')
-    xmlhttp.send();
+    xmlhttp.send();*/
 }
