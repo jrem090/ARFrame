@@ -73,6 +73,8 @@ function requestTraffic(lat, lon)
     var xmlhttp = new XMLHttpRequest();
     var url = "https://adsbexchange.com/api/aircraft/json/lat/" + lat + "/lon/" + lon + "/dist/20/"
 
+    console.log(url);
+    
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var myArr = JSON.parse(this.responseText);
