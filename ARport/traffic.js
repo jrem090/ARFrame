@@ -24,8 +24,9 @@ function myFunction(arr, lat, lon) {
     var els = sceneEl.querySelectorAll('a-sphere');
     for (var i = 0; i < els.length; i++) 
       {
-          if(i <= arr.ac.length)
-          {
+          //if(i <= arr.ac.length)
+          if(false)
+             {
             var lon1 = arr.ac[i].lon;
             var lat1 = arr.ac[i].lat;
             var alt = arr.ac[i].alt /2500.0;
