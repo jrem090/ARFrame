@@ -25,7 +25,7 @@ function myFunction(arr, lat, lon) {
     for (var i = 0; i < els.length; i++) 
       {
           //if(i <= arr.ac.length)
-          if(false)
+          /*if(false)
              {
             var lon1 = arr.ac[i].lon;
             var lat1 = arr.ac[i].lat;
@@ -57,7 +57,7 @@ function myFunction(arr, lat, lon) {
           else
           {
            els[i].object3D.visible = false;
-          }
+          }*/
         }
     
         
