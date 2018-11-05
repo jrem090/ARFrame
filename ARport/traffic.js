@@ -12,8 +12,8 @@ function getQueryVariable(variable)
 function myFunction(arr, lat, lon) {
     var out = "";
     var i;
-    var lat  = 33.433638;
-    var lon  = -112.008113;
+    //var lat  = 33.433638;
+    //var lon  = -112.008113;
     var dist = 10.0;
     var R    = 6371; // in KM
     
