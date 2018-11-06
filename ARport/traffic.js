@@ -56,7 +56,7 @@ function myFunction(arr, lat, lon) {
           else
           {
            els[i].object3D.visible = false;
-          }*/
+          }
         }
     
         
