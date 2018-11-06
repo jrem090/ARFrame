@@ -24,8 +24,7 @@ function myFunction(arr, lat, lon) {
     var els = sceneEl.querySelectorAll('a-sphere');
     for (var i = 0; i < els.length; i++) 
       {
-          //if(i <= arr.ac.length)
-          /*if(false)
+          if(i <= arr.ac.length)
              {
             var lon1 = arr.ac[i].lon;
             var lat1 = arr.ac[i].lat;
@@ -76,7 +75,7 @@ function requestTraffic(lat, lon)
 
     console.log(url);
     
-    /*xmlhttp.onreadystatechange = function() {
+    xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var myArr = JSON.parse(this.responseText);
             myFunction(myArr);
@@ -85,5 +84,5 @@ function requestTraffic(lat, lon)
 
     xmlhttp.open("GET", url, true);
     xmlhttp.setRequestHeader('api-auth', 'test')
-    xmlhttp.send();*/
+    xmlhttp.send();
 }
