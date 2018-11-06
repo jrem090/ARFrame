@@ -78,7 +78,7 @@ function requestTraffic(lat, lon)
     xmlhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             var myArr = JSON.parse(this.responseText);
-            myFunction(myArr);
+            myFunction(myArr,lat,lon);
         }
     };
 
