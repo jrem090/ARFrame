@@ -71,8 +71,8 @@ function myFunction(arr, lat, lon) {
 function requestTraffic(lat, lon)
 {
     var xmlhttp = new XMLHttpRequest();
-    var url = "https://adsbexchange.com/api/aircraft/json/lat/" + lat + "/lon/" + lon + "/dist/20/"
-
+    //var url = "https://adsbexchange.com/api/aircraft/json/lat/" + lat + "/lon/" + lon + "/dist/20/"
+       var url = "https://adsbexchange.com/api/aircraft/json/lat/33.433638/lon/-112.008113/dist/10/"
     console.log(url);
     
     xmlhttp.onreadystatechange = function() {
