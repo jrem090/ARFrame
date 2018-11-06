@@ -40,9 +40,9 @@
         <a-entity text="value: North;" position="1 0 0"></a-entity>
         <script>
             if(getQueryVariable("lat")!=false)
-                setInterval(requestTraffic(getQueryVariable("lat"),getQueryVariable("lon")), 1000);
+                setInterval(requestTraffic,1000,getQueryVariable("lat"),getQueryVariable("lon"));
             else
-                setInterval(requestTraffic(33.433638,-112.008113), 1000);
+                setInterval(requestTraffic,1000,33.433638,-112.008113);
         </script>
       <a-assets>
         <!--<a-asset-item id="airport" src="https://raw.githubusercontent.com/jrem090/ARFrame/master/AIRSPACE.glb"></a-asset-item>-->
