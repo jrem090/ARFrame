@@ -1,17 +1,18 @@
 Access-Control-Allow-Origin: *
 
 <!-- include A-Frame obviously -->
-<script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
+<script src="https://aframe.io/releases/1.0.0/aframe.min.js"></script>
 
 <body style='margin : 0px; overflow: hidden;'>
 <a-scene background="color: #4A2040">
     <a-assets>
       <a-asset-item id="arcade" src="https://raw.githubusercontent.com/jrem090/ARFrame/master/Models/arcade.glb"></a-asset-item>
+	  <!--<a-asset-item id="arcade" src="D:/Projects/Code/ARFrame/Models/arcade.glb"></a-asset-item>-->
     </a-assets>
     
-    <a-entity gltf-model="#arcade" position="-1 -1 -1" rotation="0 0 0" >
-	<a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" dur="100000" easing="linear"></a-animation>
+    <a-entity id="my_arcade" gltf-model="#arcade" position="-1 -1 -1" rotation="0 0 0" >
+	<!--<a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" dur="100000" easing="linear"></a-animation>-->
 	</a-entity>
-	<a-entity camera look-controls wasd-controls="acceleration:100" position="10 5 10" fly="true"></a-entity>
+	<a-camera camera look-controls wasd-controls="acceleration:100" position="10 5 10"></a-camera>
   </a-scene>
 </body>
