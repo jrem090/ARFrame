@@ -4,13 +4,14 @@ Access-Control-Allow-Origin: *
 <script src="https://aframe.io/releases/0.8.0/aframe.min.js"></script>
 
 <body style='margin : 0px; overflow: hidden;'>
-<a-scene background="color: #AA8A9A">
+<a-scene background="color: #4A2040">
     <a-assets>
       <a-asset-item id="arcade" src="https://raw.githubusercontent.com/jrem090/ARFrame/master/Models/arcade.glb"></a-asset-item>
     </a-assets>
-    <!-- use your gltf model -->
-    <a-entity gltf-model="#arcade" position="0 0 0"></a-entity>
-    <!--<a-entity gltf-model="url(https://jrem090.github.io/ARFrame/Models/arcade.glb)"></a-entity>-->
-    <a-marker-camera preset='hiro'></a-marker-camera>
+    
+    <a-entity gltf-model="#arcade" position="-1 -1 -1" rotation="0 0 0" >
+	<a-animation attribute="rotation" from="0 0 0" to="0 360 0" repeat="indefinite" dur="100000" easing="linear"><A-animation>
+	</a-entity>
+	<a-camera look-controls wasd-controls="acceleration:100" position="10 5 10" rotation="180 180 180" fly="true"></a-entity>
   </a-scene>
 </body>
